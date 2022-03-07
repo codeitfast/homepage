@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name = "viewport" content = "width=device-width, intitial-scale = 1">
+    <meta name = "theme-color" content = "#000000">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="theme-color" content="#000">
+    <style>
+      body{
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+    
+    <div id = "text">
+      <h1 id = "welcome">Welcome.</h1>
+      <h2>I'm <i><a href = "https://replit.com/@codeitfast" target = "_blank" style = "color: white; text-decoration: none;">codeitfast</a></i></h2>
+      <a href = "#" scrollto = "#asdf" style = "text-decoration: none; color: white; font-size: 3rem;">⬇️</a>
+      
+      <hr class = 'break'>
+      <div class = "tall"></div>
+      <div class = "tall">
+        <div class = "center">
+          <a href = "#" scrollto = "#welcome" style = "text-decoration: none; color: white; font-size: 3rem;">⬆️</a>
+        <p id = "asdf">I make a lot of cool stuff</p>
+        <a href = "https://search-engine.codeitfast.repl.co/" target = "_blank"><img src = "comb.jpg" style = "width: 20%; height: auto; border-radius: 10px;"></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  $('*').each((index, item) => {
+    if(item.hasAttribute('scrollto')) {
+      item.addEventListener('click', e => {
+        let y = $(window).scrollTop();
+        $('html, body').animate({
+          scrollTop: $(item.getAttribute('scrollto')).offset().top
+        }, 1000);
+      });
+    }
+  });
+</script>
+  </body>
+</html>

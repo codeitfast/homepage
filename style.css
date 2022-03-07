@@ -1,0 +1,28 @@
+#text{
+  width: 100%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+canvas{
+  position: fixed;
+}
+
+.break{
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+
+.tall{
+  min-height: 100vh;
+}
+
+.center{
+   padding: 50vh 0;
+}
