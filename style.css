@@ -26,3 +26,14 @@ canvas{
 .center{
    padding: 50vh 0;
 }
+
+img{
+  filter: grayscale(100%);
+  
+  -webkit-transition: filter 500ms ease-in-out;
+}
+
+img:hover{
+  filter: grayscale(0%);
+  -webkit-transition: filter 500ms ease-in-out;
+}

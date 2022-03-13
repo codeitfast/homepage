@@ -50,9 +50,7 @@ var scrollDerivative = 0
 function animate() {
   scrollDerivative = scrollHeight
   scrollHeight = window.pageYOffset/1000
-
   scrollDerivative -= scrollHeight
-  
   
 	requestAnimationFrame( animate );
   for(var i = 0; i < cubes.length; i++){
